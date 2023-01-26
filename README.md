@@ -1,37 +1,43 @@
-Клонировать репозиторий и перейти в него в командной строке:
+# Yacut - укоротитель ссылок
+YaCut — это сервис укорачивания ссылок. Его назначение — ассоциировать длинную пользовательскую ссылку с короткой, которую предлагает сам пользователь или предоставляет сервис.
+## Технологии
+- [Python](https://www.python.org/)
+- [Flask](https://flask.palletsprojects.com/en/2.2.x/)
 
+
+## Особенности
+- Генерация коротких ссылок и связь их с исходными длинными ссылками.
+- Переадресация на исходный адрес при обращении к коротким ссылкам.
+
+## Использование
+Склонируйте репозиторий  
 ```
-git clone 
+git@github.com:Alex-Develepor/yacut.git
 ```
-
+Создайте виртуальное окружение 
 ```
-cd yacut
+python -m venv venv
 ```
-
-Cоздать и активировать виртуальное окружение:
-
+Активируйте виртуальное окружение  
+Обновите зависимости 
 ```
-python3 -m venv venv
+pip install --upgrade pip
 ```
-
-* Если у вас Linux/macOS
-
-    ```
-    source venv/bin/activate
-    ```
-
-* Если у вас windows
-
-    ```
-    source venv/scripts/activate
-    ```
-
-Установить зависимости из файла requirements.txt:
-
-```
-python3 -m pip install --upgrade pip
-```
-
+Установить зависимости 
 ```
 pip install -r requirements.txt
 ```
+В корне проекта создайте .env файл и заполните его
+```
+FLASK_APP=yacut
+FLASK_ENV=development
+DATABASE_URI=sqlite:///db.sqlite3
+SECRET_KEY=<YOUR_SECRET_KEY>
+```
+Запустите проект
+```
+flask run
+```
+
+## Проект выполнил
+- Александр Дворецкий
