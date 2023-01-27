@@ -2,7 +2,6 @@ import random
 import string
 
 from settings import MAX_RANDOM_LENGTH
-
 from .models import URLMap
 
 

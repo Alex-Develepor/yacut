@@ -1,8 +1,8 @@
 from datetime import datetime
 
 from flask import url_for
-from settings import MAX_CUSTOM_LENGTH
 
+from settings import MAX_CUSTOM_LENGTH
 from yacut import db
 
 

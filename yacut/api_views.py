@@ -2,8 +2,8 @@ import re
 from http import HTTPStatus
 
 from flask import jsonify, request
-from settings import MAX_CUSTOM_LENGTH, REGULAR
 
+from settings import MAX_CUSTOM_LENGTH, REGULAR
 from . import app, db
 from .error_handlers import InvalidAPIUsage
 from .models import URLMap
