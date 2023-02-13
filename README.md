@@ -39,7 +39,7 @@ FLASK_ENV=development
 DATABASE_URI=sqlite:///db.sqlite3
 SECRET_KEY=<YOUR_SECRET_KEY>
 ```
-5. В папке с файлом manage.py выполните миграции:
+5. Запустите приложение:
 ```
 flask run
 ```
